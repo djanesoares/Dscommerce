@@ -28,7 +28,7 @@ public class OrderItem {
         return id.getOrder();
     }
 
-    public void setOrder(Order order){
+    public void setOrder(Order order) {
         id.setOrder(order);
     }
 
