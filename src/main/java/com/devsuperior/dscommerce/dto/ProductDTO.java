@@ -1,6 +1,7 @@
 package com.devsuperior.dscommerce.dto;
 
 import com.devsuperior.dscommerce.entities.Product;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
 public class ProductDTO {
     private Long id;
@@ -9,9 +10,7 @@ public class ProductDTO {
     private Double price;
     private String imgUrl;
 
-    public ProductDTO(){
-    }
-
+    @JsonCreator
     public ProductDTO(Long id, String name, String description, Double price, String imgUrl) {
         this.id = id;
         this.name = name;
